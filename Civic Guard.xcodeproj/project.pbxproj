@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4287199829FC6CCD0043C82C /* Civic_GuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287199729FC6CCD0043C82C /* Civic_GuardApp.swift */; };
+		4287199A29FC6CCD0043C82C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287199929FC6CCD0043C82C /* ContentView.swift */; };
+		4287199C29FC6CCE0043C82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4287199B29FC6CCE0043C82C /* Assets.xcassets */; };
+		4287199F29FC6CCE0043C82C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4287199E29FC6CCE0043C82C /* Preview Assets.xcassets */; };
+		428719A929FC6CCE0043C82C /* Civic_GuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428719A829FC6CCE0043C82C /* Civic_GuardTests.swift */; };
+		428719B329FC6CCE0043C82C /* Civic_GuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428719B229FC6CCE0043C82C /* Civic_GuardUITests.swift */; };
+		428719B529FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428719B429FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		428719A529FC6CCE0043C82C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4287198C29FC6CCD0043C82C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4287199329FC6CCD0043C82C;
+			remoteInfo = "Civic Guard";
+		};
+		428719AF29FC6CCE0043C82C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4287198C29FC6CCD0043C82C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4287199329FC6CCD0043C82C;
+			remoteInfo = "Civic Guard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4287199429FC6CCD0043C82C /* Civic Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Civic Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4287199729FC6CCD0043C82C /* Civic_GuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardApp.swift; sourceTree = "<group>"; };
+		4287199929FC6CCD0043C82C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4287199B29FC6CCE0043C82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4287199E29FC6CCE0043C82C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		428719A429FC6CCE0043C82C /* Civic GuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Civic GuardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		428719A829FC6CCE0043C82C /* Civic_GuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardTests.swift; sourceTree = "<group>"; };
+		428719AE29FC6CCE0043C82C /* Civic GuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Civic GuardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		428719B229FC6CCE0043C82C /* Civic_GuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardUITests.swift; sourceTree = "<group>"; };
+		428719B429FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4287199129FC6CCD0043C82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428719A129FC6CCE0043C82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428719AB29FC6CCE0043C82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4287198B29FC6CCD0043C82C = {
+			isa = PBXGroup;
+			children = (
+				4287199629FC6CCD0043C82C /* Civic Guard */,
+				428719A729FC6CCE0043C82C /* Civic GuardTests */,
+				428719B129FC6CCE0043C82C /* Civic GuardUITests */,
+				4287199529FC6CCD0043C82C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4287199529FC6CCD0043C82C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4287199429FC6CCD0043C82C /* Civic Guard.app */,
+				428719A429FC6CCE0043C82C /* Civic GuardTests.xctest */,
+				428719AE29FC6CCE0043C82C /* Civic GuardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4287199629FC6CCD0043C82C /* Civic Guard */ = {
+			isa = PBXGroup;
+			children = (
+				4287199729FC6CCD0043C82C /* Civic_GuardApp.swift */,
+				4287199929FC6CCD0043C82C /* ContentView.swift */,
+				4287199B29FC6CCE0043C82C /* Assets.xcassets */,
+				4287199D29FC6CCE0043C82C /* Preview Content */,
+			);
+			path = "Civic Guard";
+			sourceTree = "<group>";
+		};
+		4287199D29FC6CCE0043C82C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4287199E29FC6CCE0043C82C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		428719A729FC6CCE0043C82C /* Civic GuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				428719A829FC6CCE0043C82C /* Civic_GuardTests.swift */,
+			);
+			path = "Civic GuardTests";
+			sourceTree = "<group>";
+		};
+		428719B129FC6CCE0043C82C /* Civic GuardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				428719B229FC6CCE0043C82C /* Civic_GuardUITests.swift */,
+				428719B429FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift */,
+			);
+			path = "Civic GuardUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4287199329FC6CCD0043C82C /* Civic Guard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428719B829FC6CCE0043C82C /* Build configuration list for PBXNativeTarget "Civic Guard" */;
+			buildPhases = (
+				4287199029FC6CCD0043C82C /* Sources */,
+				4287199129FC6CCD0043C82C /* Frameworks */,
+				4287199229FC6CCD0043C82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Civic Guard";
+			productName = "Civic Guard";
+			productReference = 4287199429FC6CCD0043C82C /* Civic Guard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		428719A329FC6CCE0043C82C /* Civic GuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428719BB29FC6CCE0043C82C /* Build configuration list for PBXNativeTarget "Civic GuardTests" */;
+			buildPhases = (
+				428719A029FC6CCE0043C82C /* Sources */,
+				428719A129FC6CCE0043C82C /* Frameworks */,
+				428719A229FC6CCE0043C82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				428719A629FC6CCE0043C82C /* PBXTargetDependency */,
+			);
+			name = "Civic GuardTests";
+			productName = "Civic GuardTests";
+			productReference = 428719A429FC6CCE0043C82C /* Civic GuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		428719AD29FC6CCE0043C82C /* Civic GuardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428719BE29FC6CCE0043C82C /* Build configuration list for PBXNativeTarget "Civic GuardUITests" */;
+			buildPhases = (
+				428719AA29FC6CCE0043C82C /* Sources */,
+				428719AB29FC6CCE0043C82C /* Frameworks */,
+				428719AC29FC6CCE0043C82C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				428719B029FC6CCE0043C82C /* PBXTargetDependency */,
+			);
+			name = "Civic GuardUITests";
+			productName = "Civic GuardUITests";
+			productReference = 428719AE29FC6CCE0043C82C /* Civic GuardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4287198C29FC6CCD0043C82C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4287199329FC6CCD0043C82C = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					428719A329FC6CCE0043C82C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 4287199329FC6CCD0043C82C;
+					};
+					428719AD29FC6CCE0043C82C = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 4287199329FC6CCD0043C82C;
+					};
+				};
+			};
+			buildConfigurationList = 4287198F29FC6CCD0043C82C /* Build configuration list for PBXProject "Civic Guard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4287198B29FC6CCD0043C82C;
+			productRefGroup = 4287199529FC6CCD0043C82C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4287199329FC6CCD0043C82C /* Civic Guard */,
+				428719A329FC6CCE0043C82C /* Civic GuardTests */,
+				428719AD29FC6CCE0043C82C /* Civic GuardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4287199229FC6CCD0043C82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4287199F29FC6CCE0043C82C /* Preview Assets.xcassets in Resources */,
+				4287199C29FC6CCE0043C82C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428719A229FC6CCE0043C82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428719AC29FC6CCE0043C82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4287199029FC6CCD0043C82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4287199A29FC6CCD0043C82C /* ContentView.swift in Sources */,
+				4287199829FC6CCD0043C82C /* Civic_GuardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428719A029FC6CCE0043C82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428719A929FC6CCE0043C82C /* Civic_GuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428719AA29FC6CCE0043C82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428719B329FC6CCE0043C82C /* Civic_GuardUITests.swift in Sources */,
+				428719B529FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		428719A629FC6CCE0043C82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4287199329FC6CCD0043C82C /* Civic Guard */;
+			targetProxy = 428719A529FC6CCE0043C82C /* PBXContainerItemProxy */;
+		};
+		428719B029FC6CCE0043C82C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4287199329FC6CCD0043C82C /* Civic Guard */;
+			targetProxy = 428719AF29FC6CCE0043C82C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		428719B629FC6CCE0043C82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		428719B729FC6CCE0043C82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		428719B929FC6CCE0043C82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Civic Guard/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unibuc.ro.Civic-Guard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		428719BA29FC6CCE0043C82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Civic Guard/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unibuc.ro.Civic-Guard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		428719BC29FC6CCE0043C82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unibuc.ro.Civic-GuardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Civic Guard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Civic Guard";
+			};
+			name = Debug;
+		};
+		428719BD29FC6CCE0043C82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unibuc.ro.Civic-GuardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Civic Guard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Civic Guard";
+			};
+			name = Release;
+		};
+		428719BF29FC6CCE0043C82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unibuc.ro.Civic-GuardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Civic Guard";
+			};
+			name = Debug;
+		};
+		428719C029FC6CCE0043C82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unibuc.ro.Civic-GuardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Civic Guard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4287198F29FC6CCD0043C82C /* Build configuration list for PBXProject "Civic Guard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428719B629FC6CCE0043C82C /* Debug */,
+				428719B729FC6CCE0043C82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428719B829FC6CCE0043C82C /* Build configuration list for PBXNativeTarget "Civic Guard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428719B929FC6CCE0043C82C /* Debug */,
+				428719BA29FC6CCE0043C82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428719BB29FC6CCE0043C82C /* Build configuration list for PBXNativeTarget "Civic GuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428719BC29FC6CCE0043C82C /* Debug */,
+				428719BD29FC6CCE0043C82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428719BE29FC6CCE0043C82C /* Build configuration list for PBXNativeTarget "Civic GuardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428719BF29FC6CCE0043C82C /* Debug */,
+				428719C029FC6CCE0043C82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4287198C29FC6CCD0043C82C /* Project object */;
+}
