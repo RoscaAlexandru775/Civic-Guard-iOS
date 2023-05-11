@@ -14,6 +14,13 @@
 		428719A929FC6CCE0043C82C /* Civic_GuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428719A829FC6CCE0043C82C /* Civic_GuardTests.swift */; };
 		428719B329FC6CCE0043C82C /* Civic_GuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428719B229FC6CCE0043C82C /* Civic_GuardUITests.swift */; };
 		428719B529FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428719B429FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift */; };
+		42AB5E572A0C12330054ADD5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E562A0C12330054ADD5 /* FirebaseAuth */; };
+		42AB5E592A0C12330054ADD5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E582A0C12330054ADD5 /* FirebaseFirestore */; };
+		42AB5E5B2A0C138E0054ADD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AB5E5A2A0C138E0054ADD5 /* GoogleService-Info.plist */; };
+		42AB5E5D2A0C1BD50054ADD5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */; };
+		42AB5E602A0C2F950054ADD5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E5F2A0C2F950054ADD5 /* FirebaseDatabase */; };
+		42AB5E622A0C2F9B0054ADD5 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E612A0C2F9B0054ADD5 /* FirebaseDatabaseSwift */; };
+		42AB5E642A0C3A450054ADD5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E632A0C3A450054ADD5 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,8 @@
 		428719AE29FC6CCE0043C82C /* Civic GuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Civic GuardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		428719B229FC6CCE0043C82C /* Civic_GuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardUITests.swift; sourceTree = "<group>"; };
 		428719B429FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		42AB5E5A2A0C138E0054ADD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42AB5E622A0C2F9B0054ADD5 /* FirebaseDatabaseSwift in Frameworks */,
+				42AB5E602A0C2F950054ADD5 /* FirebaseDatabase in Frameworks */,
+				42AB5E642A0C3A450054ADD5 /* FirebaseMessaging in Frameworks */,
+				42AB5E572A0C12330054ADD5 /* FirebaseAuth in Frameworks */,
+				42AB5E592A0C12330054ADD5 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,7 @@
 				428719A729FC6CCE0043C82C /* Civic GuardTests */,
 				428719B129FC6CCE0043C82C /* Civic GuardUITests */,
 				4287199529FC6CCD0043C82C /* Products */,
+				42AB5E5E2A0C2F950054ADD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +109,10 @@
 		4287199629FC6CCD0043C82C /* Civic Guard */ = {
 			isa = PBXGroup;
 			children = (
+				42AB5E5A2A0C138E0054ADD5 /* GoogleService-Info.plist */,
 				4287199729FC6CCD0043C82C /* Civic_GuardApp.swift */,
 				4287199929FC6CCD0043C82C /* ContentView.swift */,
+				42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */,
 				4287199B29FC6CCE0043C82C /* Assets.xcassets */,
 				4287199D29FC6CCE0043C82C /* Preview Content */,
 			);
@@ -127,6 +144,13 @@
 			path = "Civic GuardUITests";
 			sourceTree = "<group>";
 		};
+		42AB5E5E2A0C2F950054ADD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +167,13 @@
 			dependencies = (
 			);
 			name = "Civic Guard";
+			packageProductDependencies = (
+				42AB5E562A0C12330054ADD5 /* FirebaseAuth */,
+				42AB5E582A0C12330054ADD5 /* FirebaseFirestore */,
+				42AB5E5F2A0C2F950054ADD5 /* FirebaseDatabase */,
+				42AB5E612A0C2F9B0054ADD5 /* FirebaseDatabaseSwift */,
+				42AB5E632A0C3A450054ADD5 /* FirebaseMessaging */,
+			);
 			productName = "Civic Guard";
 			productReference = 4287199429FC6CCD0043C82C /* Civic Guard.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +246,9 @@
 				Base,
 			);
 			mainGroup = 4287198B29FC6CCD0043C82C;
+			packageReferences = (
+				42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4287199529FC6CCD0043C82C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +267,7 @@
 			files = (
 				4287199F29FC6CCE0043C82C /* Preview Assets.xcassets in Resources */,
 				4287199C29FC6CCE0043C82C /* Assets.xcassets in Resources */,
+				42AB5E5B2A0C138E0054ADD5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42AB5E5D2A0C1BD50054ADD5 /* HomeView.swift in Sources */,
 				4287199A29FC6CCD0043C82C /* ContentView.swift in Sources */,
 				4287199829FC6CCD0043C82C /* Civic_GuardApp.swift in Sources */,
 			);
@@ -417,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Civic Guard/Preview Content\"";
+				DEVELOPMENT_TEAM = 4ATNABC6U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Civic Guard/Preview Content\"";
+				DEVELOPMENT_TEAM = 4ATNABC6U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +615,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42AB5E562A0C12330054ADD5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		42AB5E582A0C12330054ADD5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		42AB5E5F2A0C2F950054ADD5 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		42AB5E612A0C2F9B0054ADD5 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		42AB5E632A0C3A450054ADD5 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4287198C29FC6CCD0043C82C /* Project object */;
 }
