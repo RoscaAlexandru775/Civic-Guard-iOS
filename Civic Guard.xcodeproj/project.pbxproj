@@ -20,7 +20,8 @@
 		42AB5E5D2A0C1BD50054ADD5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */; };
 		42AB5E602A0C2F950054ADD5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E5F2A0C2F950054ADD5 /* FirebaseDatabase */; };
 		42AB5E622A0C2F9B0054ADD5 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E612A0C2F9B0054ADD5 /* FirebaseDatabaseSwift */; };
-		42AB5E642A0C3A450054ADD5 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E632A0C3A450054ADD5 /* FirebaseMessaging */; };
+		42AB5E662A0D1A110054ADD5 /* Complaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E652A0D1A110054ADD5 /* Complaint.swift */; };
+		42AB5E6C2A0E96490054ADD5 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E6B2A0E96490054ADD5 /* Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		428719B429FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42AB5E5A2A0C138E0054ADD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		42AB5E652A0D1A110054ADD5 /* Complaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complaint.swift; sourceTree = "<group>"; };
+		42AB5E6B2A0E96490054ADD5 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +65,6 @@
 			files = (
 				42AB5E622A0C2F9B0054ADD5 /* FirebaseDatabaseSwift in Frameworks */,
 				42AB5E602A0C2F950054ADD5 /* FirebaseDatabase in Frameworks */,
-				42AB5E642A0C3A450054ADD5 /* FirebaseMessaging in Frameworks */,
 				42AB5E572A0C12330054ADD5 /* FirebaseAuth in Frameworks */,
 				42AB5E592A0C12330054ADD5 /* FirebaseFirestore in Frameworks */,
 			);
@@ -112,9 +114,11 @@
 				42AB5E5A2A0C138E0054ADD5 /* GoogleService-Info.plist */,
 				4287199729FC6CCD0043C82C /* Civic_GuardApp.swift */,
 				4287199929FC6CCD0043C82C /* ContentView.swift */,
+				42AB5E652A0D1A110054ADD5 /* Complaint.swift */,
 				42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */,
 				4287199B29FC6CCE0043C82C /* Assets.xcassets */,
 				4287199D29FC6CCE0043C82C /* Preview Content */,
+				42AB5E6B2A0E96490054ADD5 /* Filter.swift */,
 			);
 			path = "Civic Guard";
 			sourceTree = "<group>";
@@ -172,7 +176,6 @@
 				42AB5E582A0C12330054ADD5 /* FirebaseFirestore */,
 				42AB5E5F2A0C2F950054ADD5 /* FirebaseDatabase */,
 				42AB5E612A0C2F9B0054ADD5 /* FirebaseDatabaseSwift */,
-				42AB5E632A0C3A450054ADD5 /* FirebaseMessaging */,
 			);
 			productName = "Civic Guard";
 			productReference = 4287199429FC6CCD0043C82C /* Civic Guard.app */;
@@ -293,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				42AB5E5D2A0C1BD50054ADD5 /* HomeView.swift in Sources */,
+				42AB5E6C2A0E96490054ADD5 /* Filter.swift in Sources */,
+				42AB5E662A0D1A110054ADD5 /* Complaint.swift in Sources */,
 				4287199A29FC6CCD0043C82C /* ContentView.swift in Sources */,
 				4287199829FC6CCD0043C82C /* Civic_GuardApp.swift in Sources */,
 			);
@@ -647,11 +652,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabaseSwift;
-		};
-		42AB5E632A0C3A450054ADD5 /* FirebaseMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 42AB5E552A0C12330054ADD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
