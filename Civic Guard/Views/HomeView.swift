@@ -71,49 +71,53 @@ struct HomeView: View {
         }
     }
     
+    
     var content: some View {
+        
         NavigationView{
             ZStack(alignment: .bottomTrailing) {
                 
                 List(filteredComplaints, id: \.creationDate) { complaint in
-                    HStack(spacing: 10) {
-                        AsyncImage(url: URL(string: complaint.imageUrl)) { image in
-                            image
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 50)
-                                .cornerRadius(10)
-                        } placeholder: {
-                            Image(systemName: "photo")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 50)
-                                .cornerRadius(10)
-                        }
-                        
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text(complaint.title)
-                                .font(.headline).foregroundColor(.black)
-                            Text(complaint.description)
-                                .font(.subheadline)
-                                .foregroundColor(.black)
-                        }
-                        Spacer()
-                        
-                        ZStack(alignment: .topTrailing) {
-                            if complaint.status == true {
-                                Circle()
-                                    .frame(width: 12, height: 12)
-                                    .foregroundColor(.red)
-                            } else if complaint.status == false {
-                                Circle()
-                                    .frame(width: 12, height: 12)
-                                    .foregroundColor(.green)
+                    NavigationLink(destination: DetailedComplaintView(complaint: complaint)){
+                        HStack(spacing: 10) {
+                            AsyncImage(url: URL(string: complaint.imageUrl)) { image in
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 50, height: 50)
+                                    .cornerRadius(10)
+                            } placeholder: {
+                                Image(systemName: "photo")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 50, height: 50)
+                                    .cornerRadius(10)
+                            }
+                            
+                            VStack(alignment: .leading, spacing: 5) {
+                                Text(complaint.title)
+                                    .font(.headline).foregroundColor(.black)
+                                Text(complaint.description)
+                                    .font(.subheadline)
+                                    .foregroundColor(.black)
+                            }
+                            Spacer()
+                            
+                            ZStack(alignment: .topTrailing) {
+                                if complaint.status == true {
+                                    Circle()
+                                        .frame(width: 12, height: 12)
+                                        .foregroundColor(.red)
+                                } else if complaint.status == false {
+                                    Circle()
+                                        .frame(width: 12, height: 12)
+                                        .foregroundColor(.green)
+                                }
                             }
                         }
                     }
                 }.searchable(text: $searchText)
-                    .navigationTitle("Complaints")
+                        .navigationTitle("Complaints")
                 
                 Button(action: {
                     showFilter = true
@@ -269,18 +273,18 @@ struct HomeView: View {
             snapshot in
             if let value = snapshot.value as?  [String: [String: Any]] {
                 var complaintList: [Complaint] = []
-                for (_, complaintData) in value {
-                    do {
-                    
-                        let jsonData = try JSONSerialization.data(withJSONObject: complaintData, options: [])
-                        let complaint = try JSONDecoder().decode(Complaint.self, from: jsonData)
-                        complaintList.append(complaint)
-                        
-                    } catch {
-                        print("Error decoding complaint: \(error.localizedDescription)")
-                        
-                    }
-                }
+                for (complaintID, complaintData) in value {
+                               do {
+                                   var mutableComplaintData = complaintData // Create a mutable copy
+                                   mutableComplaintData["id"] = complaintID // Assign the complaint ID
+
+                                   let jsonData = try JSONSerialization.data(withJSONObject: mutableComplaintData, options: [])
+                                   let complaint = try JSONDecoder().decode(Complaint.self, from: jsonData)
+                                   complaintList.append(complaint)
+                               } catch {
+                                   print("Error decoding complaint: \(error.localizedDescription)")
+                               }
+                           }
                 complaints = complaintList
             }
             isLoading = false
