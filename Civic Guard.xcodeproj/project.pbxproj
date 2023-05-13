@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4287199829FC6CCD0043C82C /* Civic_GuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287199729FC6CCD0043C82C /* Civic_GuardApp.swift */; };
-		4287199A29FC6CCD0043C82C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4287199929FC6CCD0043C82C /* ContentView.swift */; };
 		4287199C29FC6CCE0043C82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4287199B29FC6CCE0043C82C /* Assets.xcassets */; };
 		4287199F29FC6CCE0043C82C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4287199E29FC6CCE0043C82C /* Preview Assets.xcassets */; };
 		428719A929FC6CCE0043C82C /* Civic_GuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428719A829FC6CCE0043C82C /* Civic_GuardTests.swift */; };
@@ -17,11 +16,16 @@
 		42AB5E572A0C12330054ADD5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E562A0C12330054ADD5 /* FirebaseAuth */; };
 		42AB5E592A0C12330054ADD5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E582A0C12330054ADD5 /* FirebaseFirestore */; };
 		42AB5E5B2A0C138E0054ADD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AB5E5A2A0C138E0054ADD5 /* GoogleService-Info.plist */; };
-		42AB5E5D2A0C1BD50054ADD5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */; };
 		42AB5E602A0C2F950054ADD5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E5F2A0C2F950054ADD5 /* FirebaseDatabase */; };
 		42AB5E622A0C2F9B0054ADD5 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42AB5E612A0C2F9B0054ADD5 /* FirebaseDatabaseSwift */; };
-		42AB5E662A0D1A110054ADD5 /* Complaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E652A0D1A110054ADD5 /* Complaint.swift */; };
-		42AB5E6C2A0E96490054ADD5 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E6B2A0E96490054ADD5 /* Filter.swift */; };
+		42AB5E782A0FA5530054ADD5 /* FIlterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E772A0FA5530054ADD5 /* FIlterView.swift */; };
+		42AB5E7A2A0FA5A30054ADD5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E792A0FA5A30054ADD5 /* HomeView.swift */; };
+		42AB5E7D2A0FA5F10054ADD5 /* Complaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E7C2A0FA5F10054ADD5 /* Complaint.swift */; };
+		42AB5E7F2A0FA6460054ADD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E7E2A0FA6460054ADD5 /* ContentView.swift */; };
+		42AB5E812A0FA6960054ADD5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E802A0FA6960054ADD5 /* MapView.swift */; };
+		42AB5E832A0FD37B0054ADD5 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E822A0FD37B0054ADD5 /* PinView.swift */; };
+		42AB5E852A0FE1530054ADD5 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E842A0FE1530054ADD5 /* LocationItem.swift */; };
+		42AB5E872A0FE1A40054ADD5 /* ComplaintPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E862A0FE1A40054ADD5 /* ComplaintPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +48,6 @@
 /* Begin PBXFileReference section */
 		4287199429FC6CCD0043C82C /* Civic Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Civic Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4287199729FC6CCD0043C82C /* Civic_GuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardApp.swift; sourceTree = "<group>"; };
-		4287199929FC6CCD0043C82C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4287199B29FC6CCE0043C82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4287199E29FC6CCE0043C82C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		428719A429FC6CCE0043C82C /* Civic GuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Civic GuardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,9 +56,14 @@
 		428719B229FC6CCE0043C82C /* Civic_GuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardUITests.swift; sourceTree = "<group>"; };
 		428719B429FC6CCE0043C82C /* Civic_GuardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civic_GuardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42AB5E5A2A0C138E0054ADD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		42AB5E652A0D1A110054ADD5 /* Complaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complaint.swift; sourceTree = "<group>"; };
-		42AB5E6B2A0E96490054ADD5 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		42AB5E772A0FA5530054ADD5 /* FIlterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIlterView.swift; sourceTree = "<group>"; };
+		42AB5E792A0FA5A30054ADD5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		42AB5E7C2A0FA5F10054ADD5 /* Complaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complaint.swift; sourceTree = "<group>"; };
+		42AB5E7E2A0FA6460054ADD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		42AB5E802A0FA6960054ADD5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		42AB5E822A0FD37B0054ADD5 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		42AB5E842A0FE1530054ADD5 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		42AB5E862A0FE1A40054ADD5 /* ComplaintPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplaintPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +119,12 @@
 		4287199629FC6CCD0043C82C /* Civic Guard */ = {
 			isa = PBXGroup;
 			children = (
+				42AB5E7B2A0FA5DC0054ADD5 /* Models */,
+				42AB5E762A0FA4CB0054ADD5 /* Views */,
 				42AB5E5A2A0C138E0054ADD5 /* GoogleService-Info.plist */,
 				4287199729FC6CCD0043C82C /* Civic_GuardApp.swift */,
-				4287199929FC6CCD0043C82C /* ContentView.swift */,
-				42AB5E652A0D1A110054ADD5 /* Complaint.swift */,
-				42AB5E5C2A0C1BD50054ADD5 /* HomeView.swift */,
 				4287199B29FC6CCE0043C82C /* Assets.xcassets */,
 				4287199D29FC6CCE0043C82C /* Preview Content */,
-				42AB5E6B2A0E96490054ADD5 /* Filter.swift */,
 			);
 			path = "Civic Guard";
 			sourceTree = "<group>";
@@ -153,6 +159,28 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42AB5E762A0FA4CB0054ADD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42AB5E772A0FA5530054ADD5 /* FIlterView.swift */,
+				42AB5E792A0FA5A30054ADD5 /* HomeView.swift */,
+				42AB5E7E2A0FA6460054ADD5 /* ContentView.swift */,
+				42AB5E802A0FA6960054ADD5 /* MapView.swift */,
+				42AB5E822A0FD37B0054ADD5 /* PinView.swift */,
+				42AB5E862A0FE1A40054ADD5 /* ComplaintPreview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42AB5E7B2A0FA5DC0054ADD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42AB5E7C2A0FA5F10054ADD5 /* Complaint.swift */,
+				42AB5E842A0FE1530054ADD5 /* LocationItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +323,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42AB5E5D2A0C1BD50054ADD5 /* HomeView.swift in Sources */,
-				42AB5E6C2A0E96490054ADD5 /* Filter.swift in Sources */,
-				42AB5E662A0D1A110054ADD5 /* Complaint.swift in Sources */,
-				4287199A29FC6CCD0043C82C /* ContentView.swift in Sources */,
+				42AB5E7D2A0FA5F10054ADD5 /* Complaint.swift in Sources */,
+				42AB5E812A0FA6960054ADD5 /* MapView.swift in Sources */,
+				42AB5E832A0FD37B0054ADD5 /* PinView.swift in Sources */,
+				42AB5E7F2A0FA6460054ADD5 /* ContentView.swift in Sources */,
+				42AB5E7A2A0FA5A30054ADD5 /* HomeView.swift in Sources */,
+				42AB5E852A0FE1530054ADD5 /* LocationItem.swift in Sources */,
+				42AB5E872A0FE1A40054ADD5 /* ComplaintPreview.swift in Sources */,
+				42AB5E782A0FA5530054ADD5 /* FIlterView.swift in Sources */,
 				4287199829FC6CCD0043C82C /* Civic_GuardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +493,7 @@
 				DEVELOPMENT_TEAM = 4ATNABC6U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To provide a better user experience and display relevant complaints, location permission is required. Please grant access to your location to view nearby complaints.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +523,7 @@
 				DEVELOPMENT_TEAM = 4ATNABC6U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To provide a better user experience and display relevant complaints, location permission is required. Please grant access to your location to view nearby complaints.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
