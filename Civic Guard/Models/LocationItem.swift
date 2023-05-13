@@ -15,6 +15,7 @@ struct LocationItem: Identifiable, Equatable {
     let description: String
     let imageUrl: String
     let status: Bool
+    let complaintId: String    
     
     //Equatable
     static func == (lhs: LocationItem, rhs: LocationItem) -> Bool {

@@ -10,7 +10,7 @@ import SwiftUI
 struct ComplaintPreview: View {
     
     @Binding var selectedComplaint: LocationItem
-    
+      
 
     var body: some View {
         
@@ -64,6 +64,7 @@ struct ComplaintPreview: View {
                     
                 }.padding(20).background(RoundedRectangle(cornerRadius: 10).fill(.ultraThinMaterial).offset(y: 50)).cornerRadius(10)
             }
+            
         }
     }
 }

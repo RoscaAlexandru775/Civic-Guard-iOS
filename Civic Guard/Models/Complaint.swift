@@ -8,6 +8,7 @@
 import Foundation
 
 struct Complaint: Decodable {
+    var id: String
     var userId: String
     var status: Bool
     var locationLatitude: String

@@ -26,6 +26,7 @@
 		42AB5E832A0FD37B0054ADD5 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E822A0FD37B0054ADD5 /* PinView.swift */; };
 		42AB5E852A0FE1530054ADD5 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E842A0FE1530054ADD5 /* LocationItem.swift */; };
 		42AB5E872A0FE1A40054ADD5 /* ComplaintPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E862A0FE1A40054ADD5 /* ComplaintPreview.swift */; };
+		42AB5E892A0FE4990054ADD5 /* DetailedComplaintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AB5E882A0FE4990054ADD5 /* DetailedComplaintView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		42AB5E822A0FD37B0054ADD5 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		42AB5E842A0FE1530054ADD5 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		42AB5E862A0FE1A40054ADD5 /* ComplaintPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplaintPreview.swift; sourceTree = "<group>"; };
+		42AB5E882A0FE4990054ADD5 /* DetailedComplaintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedComplaintView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				42AB5E802A0FA6960054ADD5 /* MapView.swift */,
 				42AB5E822A0FD37B0054ADD5 /* PinView.swift */,
 				42AB5E862A0FE1A40054ADD5 /* ComplaintPreview.swift */,
+				42AB5E882A0FE4990054ADD5 /* DetailedComplaintView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				42AB5E7F2A0FA6460054ADD5 /* ContentView.swift in Sources */,
 				42AB5E7A2A0FA5A30054ADD5 /* HomeView.swift in Sources */,
 				42AB5E852A0FE1530054ADD5 /* LocationItem.swift in Sources */,
+				42AB5E892A0FE4990054ADD5 /* DetailedComplaintView.swift in Sources */,
 				42AB5E872A0FE1A40054ADD5 /* ComplaintPreview.swift in Sources */,
 				42AB5E782A0FA5530054ADD5 /* FIlterView.swift in Sources */,
 				4287199829FC6CCD0043C82C /* Civic_GuardApp.swift in Sources */,

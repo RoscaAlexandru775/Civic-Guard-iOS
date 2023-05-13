@@ -18,7 +18,7 @@ struct MapView: View {
     @State private var showHomeView = false
     @State private var mapRegion: MKCoordinateRegion
     @State private var locations: [LocationItem]
-    @State private var selectedComplaint: LocationItem = LocationItem(coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), title: "", description: "", imageUrl: "", status: false)
+    @State private var selectedComplaint: LocationItem = LocationItem(coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), title: "", description: "", imageUrl: "", status: false, complaintId: "")
 
      
     init(currentLocationLatitude: Binding<Double?>, currentLocationLongitude: Binding<Double?>, complaints: Binding<[Complaint]>) {
@@ -32,30 +32,46 @@ struct MapView: View {
         
         //To DO: refactor this
         let coordonates = complaints.map { complaint in
-            return (Double(complaint.locationLatitude.wrappedValue), Double(complaint.locationLongitude.wrappedValue), complaint.title.wrappedValue, complaint.description.wrappedValue, complaint.imageUrl.wrappedValue, complaint.status.wrappedValue)
+            return (Double(complaint.locationLatitude.wrappedValue), Double(complaint.locationLongitude.wrappedValue), complaint.title.wrappedValue, complaint.description.wrappedValue, complaint.imageUrl.wrappedValue, complaint.status.wrappedValue, complaint.id.wrappedValue)
         }
         
         let locationItems = coordonates.map { location in
             if let latitude = location.0, let longitude = location.1{
-                return LocationItem(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), title: location.2, description: location.3, imageUrl: location.4, status: location.5)
+                return LocationItem(coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), title: location.2, description: location.3, imageUrl: location.4, status: location.5, complaintId: location.6)
             }
-            return LocationItem(coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), title: "", description: "", imageUrl: "", status: false)
+            return LocationItem(coordinate: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), title: "", description: "", imageUrl: "", status: false, complaintId: "")
         }
         _locations = State(initialValue: locationItems)
     }
     
     var body: some View {
         
-        ZStack {
-            Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
-                MapAnnotation(coordinate: location.coordinate) {
-                    PinView().scaleEffect(selectedComplaint == location ? 1 : 0.7)
-                        .shadow(radius: 10).onTapGesture {
-                            selectedComplaint = location
-                        }                }
-            }.ignoresSafeArea()
-            ComplaintPreview(selectedComplaint: $selectedComplaint).padding()
-        }
+        NavigationView{
+            ZStack {
+                Map(coordinateRegion: $mapRegion, annotationItems: locations) { location in
+                    MapAnnotation(coordinate: location.coordinate) {
+                        PinView().scaleEffect(selectedComplaint == location ? 1 : 0.7)
+                            .shadow(radius: 10).onTapGesture {
+                                selectedComplaint = location
+                            }                }
+                }.ignoresSafeArea()
+                
+                NavigationLink(destination: DetailedComplaintView(complaint: filteredComplaint, hideBackButton: true )){
+                    ComplaintPreview(selectedComplaint: $selectedComplaint).padding().tint(.black)
+                }.isDetailLink(false)
+            }
+        }            
         
+    }
+
+    //complaint that is on preview
+    var filteredComplaint: Complaint {
+        let aux =  complaints.filter {$0.id == selectedComplaint.complaintId}
+        
+        if  aux.isEmpty {
+            return complaints[0]
+        }
+        return aux[0]
+      
     }
 }
