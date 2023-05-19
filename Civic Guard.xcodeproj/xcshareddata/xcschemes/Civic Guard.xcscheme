@@ -79,6 +79,11 @@
             value = "disable"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "GOOGLE_API_KEY"
+            value = "AIzaSyA5-FZ7ncDGGee2vfolNUMEIkqv9d2eGLw"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
       <LocationScenarioReference
          identifier = "London, England"

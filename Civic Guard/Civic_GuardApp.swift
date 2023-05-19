@@ -17,7 +17,9 @@ struct Civic_GuardApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(ImageViewModel()).onAppear{
+                UserDefaults.standard.setValue(false, forKey: "_UIConstrainBasedLayoutLogUnsetisfiable")
+            }
         }
     }
 }
