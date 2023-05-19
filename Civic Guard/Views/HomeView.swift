@@ -136,10 +136,7 @@ struct HomeView: View {
                     .offset(x: 0, y: -180)
                 
                 
-                Button(action: {
-                    // First button action
-                    // Add your code here
-                }) {
+                NavigationLink(destination: AddComplaintView()){
                     Image(systemName: "plus")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
