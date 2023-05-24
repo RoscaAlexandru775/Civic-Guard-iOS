@@ -56,7 +56,7 @@ struct AddComplaintView: View {
         VStack{
             TextField("", text: $title).padding().foregroundColor(.black).textFieldStyle(.plain).overlay(RoundedRectangle(cornerRadius:  20).stroke(.gray)).placeholder(when: title.isEmpty){
                 Text("Title").foregroundColor(.black).bold().padding()}
-            TextField("ß", text: $description).padding().foregroundColor(.black).textFieldStyle(.plain)   .accentColor(.black).overlay(RoundedRectangle(cornerRadius:  20).stroke(.gray)).placeholder(when: description.isEmpty){
+            TextField("", text: $description).padding().foregroundColor(.black).textFieldStyle(.plain)   .accentColor(.black).overlay(RoundedRectangle(cornerRadius:  20).stroke(.gray)).placeholder(when: description.isEmpty){
                 Text("Description").foregroundColor(.black).bold().padding()}
             Picker("Institution", selection: $institution) {
                 ForEach(institutions, id: \.self) { institution in
